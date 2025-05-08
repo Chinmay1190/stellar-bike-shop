@@ -143,7 +143,7 @@ const ProductsPage = () => {
                     <SelectValue placeholder="All Brands" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">All Brands</SelectItem>
+                    <SelectItem value="all-brands">All Brands</SelectItem>
                     {brands.map(brand => (
                       <SelectItem key={brand.id} value={brand.name}>
                         {brand.name}
@@ -163,7 +163,7 @@ const ProductsPage = () => {
                     <SelectValue placeholder="All Categories" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">All Categories</SelectItem>
+                    <SelectItem value="all-categories">All Categories</SelectItem>
                     {categories.map(category => (
                       <SelectItem key={category.id} value={category.name}>
                         {category.name}
